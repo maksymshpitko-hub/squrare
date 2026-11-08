@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 30px 20px;
+  background: #f5f3ff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Контейнер: у ньому блоки "пливуть" вліво і переносяться вниз */
+.wrapper {
+  display: flow-root;      /* контейнер охоплює float-елементи */
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #ffffff;
+  border: 2px dashed #c4b5fd;
+  border-radius: 8px;
+}
+
+/* Спільні стилі для всіх блоків: рух вліво */
+.box {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Форми блоків */
+.box--wide {
+  width: 400px;
+  height: 70px;
+}
+
+.box--square {
+  width: 140px;
+  height: 140px;
+  margin-right: 60px;      /* 140 + 60 = 200px: три колонки по 200px */
+}
+
+/* Кольори */
+.box--violet { background: #7c3aed; }
+.box--orange { background: #f97316; }
+.box--teal   { background: #0d9488; }
+.box--pink   { background: #ec4899; }
+.box--lime   { background: #84cc16; }
+.box--sky    { background: #0ea5e9; }
+.box--gold   { background: #eab308; }
